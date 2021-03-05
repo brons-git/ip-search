@@ -35,10 +35,12 @@ class App extends React.Component {
           onChange={(e) => this.setState({ inputValue: e.target.value })}
           onKeyPress={(e) => onEnter(e, this.callAPI)}
         />
-        <button onClick={this.callAPI}>Search IP</button>
+        <button onClick={this.callAPI}>Locate</button>
         <p>
           <span>{this.state.result.city}</span>
+          <br />
           <span>{this.state.result.region_code}</span>
+          <br />
           <span>{this.state.result.zip}</span>
         </p>
       </div>
