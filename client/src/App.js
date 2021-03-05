@@ -9,7 +9,6 @@ class App extends React.Component {
 
   callAPI = async () => {
     try {
-      console.log('called API...');
       const api_url = `http://localhost:9000/ipdata/${this.state.inputValue}`;
       const res = await fetch(api_url, {
         headers: {
@@ -18,9 +17,6 @@ class App extends React.Component {
         },
       });
       const result = await res.json();
-      console.log(result.city);
-      console.log(result.region_code);
-      console.log(result.zip);
       this.setState({ result });
     } catch (error) {
       // handle errors - don't forget this part
