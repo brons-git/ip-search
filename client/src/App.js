@@ -9,7 +9,7 @@ class App extends React.Component {
 
   callAPI = async () => {
     try {
-      const api_url = `http://3.15.164.91/:9000/ipdata/${this.state.inputValue}`;
+      const api_url = `http://3.15.164.91:9000/ipdata/${this.state.inputValue}`;
       const res = await fetch(api_url, {
         headers: {
           'Content-Type': 'application/json',
