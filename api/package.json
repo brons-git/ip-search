@@ -1,0 +1,24 @@
+{
+  "name": "api",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "ipdata": "^2.2.0",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1",
+    "node-fetch": "^2.6.1",
+    "node-where": "^1.1.0",
+    "request": "^2.88.2",
+    "simple-geoip": "^0.1.2",
+    "whois-api": "^1.0.2",
+    "yargs": "^16.2.0"
+  }
+}
