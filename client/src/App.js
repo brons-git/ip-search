@@ -24,6 +24,8 @@ class App extends React.Component {
   };
 
   render() {
+    const onEnter = (event, callback) => event.key === 'Enter' && callback();
+
     return (
       <div className="App">
         <h1>IP Search</h1>
@@ -31,6 +33,7 @@ class App extends React.Component {
           type="text"
           value={this.state.inputValue}
           onChange={(e) => this.setState({ inputValue: e.target.value })}
+          onKeyPress={(e) => onEnter(e, this.callAPI)}
         />
         <button onClick={this.callAPI}>Search IP</button>
         <p>
