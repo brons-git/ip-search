@@ -19,7 +19,7 @@ class App extends React.Component {
       const result = await res.json();
       this.setState({ result });
     } catch (error) {
-      // handle errors - don't forget this part
+      // handle errors
     }
   };
 
