@@ -30,7 +30,7 @@ app.use('/testAPI', testAPIRouter);
 const fetch = require('node-fetch');
 app.get('/ipdata/:ipaddress', async (req, res, next) => {
   const ipaddress = req.params.ipaddress;
-  const api_url = `http://api.ipstack.com/${ipaddress}?access_key=5fb3bd8751dd4274364592a5a82d7bbb`;
+  const api_url = `http://api.ipstack.com/${ipaddress}?access_key=${process.env.IP_API_ACCESS_KEY}`;
   const response = await fetch(api_url);
   const json = await response.json();
   res.json(json);
