@@ -1,8 +1,8 @@
 ## Quick Start
 
-First, replace the dummy API key in .env
-
-Then..
+1. Replace the dummy API key in .env
+2. Make sure docker-compose is installed.
+3. Run the following command...
 
 ```bash
 docker-compose up
